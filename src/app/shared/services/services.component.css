@@ -1,0 +1,37 @@
+.services-section {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  padding: 4rem 1rem; /* Espaciado */
+  font-family: 'Cinzel', serif;
+}
+
+.services-section .service-card {
+  background-color: #333; /* Fondo gris oscuro para las tarjetas */
+  color: #fff; /* Texto blanco en las tarjetas */
+  border-color: white; /* Borde blanco en las tarjetas */
+  margin-bottom: 2rem; /* Espaciado entre tarjetas */
+  height: 100%; /* Altura completa para igualar el tamaño de las tarjetas */
+  display: flex; /* Flexbox para alinear el contenido */
+  flex-direction: column; /* Columna para alinear el contenido verticalmente */
+}
+
+.services-section .service-card .card-body {
+  flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca y llene el espacio disponible */
+}
+
+.services-section .service-card h5 {
+  font-size: 1.25rem; /* Tamaño del título */
+  min-height: 3rem; /* Altura mínima del título para uniformidad */
+  color: #f5f5dc;
+}
+
+.services-section .service-card p {
+  font-size: 1rem; /* Tamaño del texto */
+  min-height: 4rem; /* Altura mínima del texto para uniformidad */
+}
+
+@media (max-width: 576px) {
+  .services-section .service-card {
+      margin-bottom: 1rem; /* Ajusta el espaciado en pantallas pequeñas */
+  }
+}

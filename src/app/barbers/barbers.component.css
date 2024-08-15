@@ -1,0 +1,59 @@
+/* Contenedor de perfiles con altura ajustable y desplazamiento si es necesario */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples líneas si es necesario */
+    align-items: stretch; /* Asegura que las tarjetas tengan la misma altura en una fila */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    font-family: 'Cinzel', serif;
+    background-color: #000;
+}
+
+/* Fila que usa todo el ancho del contenedor */
+.profile-row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples líneas */
+    width: 100%;
+}
+
+/* Espaciado inferior de cada columna */
+.profile-col {
+    flex: 1 1 300px; /* Permite que las columnas sean flexibles y se ajusten a un mínimo de 300px */
+    margin: 1rem; /* Espacio entre las tarjetas */
+}
+
+/* Estilo de la tarjeta de perfil */
+.profile-card {
+    background-color: transparent;
+    border: 1px solid #fafafa;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté en columna */
+    justify-content: space-between; /* Distribuye el contenido uniformemente */
+    height: 100%; /* Asegura que la tarjeta use toda la altura disponible de la columna */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total de la tarjeta */
+}
+
+/* Imagen superior de la tarjeta */
+.card-img-top {
+    width: 100%;
+    height: auto; /* Ajusta la altura de la imagen automáticamente */
+    max-height: 200px; /* Limita la altura máxima de la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien sin distorsionarse */
+    border-bottom: 1px solid #fff;
+}
+
+.card-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 576px) {
+    .profile-wrapper {
+        padding: 1rem 0; /* Ajusta el relleno superior e inferior en pantallas pequeñas */
+    }
+}

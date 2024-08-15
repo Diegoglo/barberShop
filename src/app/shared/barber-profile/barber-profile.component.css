@@ -1,0 +1,29 @@
+/* acerca-de-nosotros.component.css */
+.about-section {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 4rem 1rem; /* Espaciado */
+    font-family: 'Cinzel', serif;
+}
+
+.about-section h1 {
+    font-size: 2rem; /* Tamaño del título */
+    text-align: justify;
+    color:#f5f5dc;
+}
+
+.about-section p {
+    font-size: 1.2rem; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: justify;
+
+}
+
+.about-section img {
+    max-width: 100%; /* Asegura que la imagen sea responsiva */
+    height: auto; /* Mantiene la proporción de la imagen */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+    pointer-events: none; /* Asegura que el overlay no interfiera con los clics */
+}
+
+

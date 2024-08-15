@@ -1,0 +1,91 @@
+/* Estilo para el contenedor principal del componente */
+.appointment-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la vista */
+    width: 100%; /* Ocupa todo el ancho de la vista */
+    background-color: #000; /* Fondo negro para el contenedor */
+    font-family: 'Cinzel', serif;
+
+}
+  
+  /* Estilo para la tarjeta */
+.card {
+    background-color: #000; /* Fondo negro para la tarjeta */
+    color: #fff; /* Texto blanco */
+    /* border: none; Sin borde */
+    /* border-radius: 8px; Bordes redondeados */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 800px; /* Ancho máximo para mantener el diseño centrado */
+    border: 3px dotted white; /* Borde blanco de 3px */
+}
+
+/* .card-body{
+    border-color: white;
+    border:3px;
+} */
+  
+  /* Estilo para el título de la tarjeta */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+  
+  /* Estilo para el botón */
+.btn {
+    background-color: #f5f5dc; /* Color del botón */
+    color: black; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    padding: 0.75rem 1.5rem; /* Espaciado interno del botón */
+    font-size: 1rem;
+    cursor: pointer; /* Cursor en forma de mano */
+    transition: background-color 0.3s ease; /* Transición para el hover */
+    display: block;
+    width: 100%; /* Botón ocupa el ancho completo */
+}
+  
+.btn:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+  
+  /* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+  
+  /* Estilo para las etiquetas */
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+  
+  /* Estilo para los campos de entrada y el select */
+.form-control {
+    border: 1px solid #495057; /* Color del borde de los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados de los campos de entrada */
+    padding: 0.5rem; /* Espaciado interno */
+}
+  
+.form-control:focus {
+    box-shadow: none; /* Sin sombra al enfocar */
+    border-color: #007bff; /* Color del borde en foco */
+}
+
+/* Estilo para el nuevo apartado de horarios disponibles */
+.view-hours {
+    margin-top: 1.5rem; /* Espaciado superior */
+}
+
+.view-hours-btn {
+    background-color: #28a745; /* Color del botón */
+    color: #fff; /* Color del texto del botón */
+}
+
+.view-hours-btn:hover {
+    background-color: #218838; /* Color del botón al pasar el mouse */
+}
+  
