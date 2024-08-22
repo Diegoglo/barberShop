@@ -5,7 +5,7 @@
     align-items: center;
     height: 100vh;
     background: black;
-    font-family: 'Cinzel', serif;
+    /* font-family: 'Cinzel', serif; */
 
   }
   
@@ -23,6 +23,7 @@
   h2 {
     margin-bottom: 20px;
     color: #d5ca9f;
+    font-family: 'Cinzel', serif;
   }
   
   .form-group {
@@ -34,7 +35,9 @@
     display: block;
     margin-bottom: 5px;
     color: #b7950b;
+    font-family: 'Cinzel', serif;
   }
+  
   
   .form-group input {
     width: 100%;

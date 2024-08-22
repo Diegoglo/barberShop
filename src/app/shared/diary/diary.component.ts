@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AppointmentService} from '../../../core/service/appointment.service';
 
 @Component({
   selector: 'app-diary',
@@ -12,7 +13,7 @@ export class DiaryComponent implements OnInit {
   today: string = ''; // Agrega esta propiedad
   currentTime: string = ''; // Agrega esta propiedad
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private appointmentService: AppointmentService) { }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
@@ -32,5 +33,17 @@ export class DiaryComponent implements OnInit {
   private getCurrentTime(): string {
     const now = new Date();
     return now.toTimeString().split(' ')[0].substring(0, 5); // Devuelve la hora en formato HH:MM
+  }
+
+  sendDateTimeToBackend(): void {
+    this.appointmentService.sendDateTime(this.selectedDate, this.selectedTime).subscribe(
+      response => {
+        console.log('Datos enviados correctamente:', response);
+        alert('Hora agendada.');
+      },
+      error => {
+        console.error('Error al enviar los datos:', error);
+      }
+    );
   }
 }

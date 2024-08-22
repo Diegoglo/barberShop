@@ -13,7 +13,7 @@
           <label for="time" class="form-label">Hora</label>
           <input type="time" class="form-control" id="time" [value]="selectedTime || currentTime" [min]="currentTime" required>
         </div>
-        <button type="submit" class="btn" [routerLink]="['/home']">Agendar</button>
+        <button type="submit" class="btn" [routerLink]="['/home']" (click)="sendDateTimeToBackend()">Agendar</button>
         <div class="view-hours">
           <button type="button" class="btn view-hours-btn" [routerLink]="['/schedule-table']">Ver horarios disponibles</button>
         </div>

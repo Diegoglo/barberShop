@@ -15,6 +15,7 @@ import { LoginComponent} from './auth/login/login.component';
 import { RegisterComponent} from './auth/register/register.component';
 import { BarbersComponent} from './barbers/barbers.component';
 import { ScheduleTableComponent} from './shared/schedule-table/schedule-table.component';
+import { PracticaExamenComponent} from './practica-examen/practica-examen.component';
 
 // import { ScheduleComponent} from '../app/schedule/schedule.component';
 import { routes } from './app.routes';
@@ -36,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     RegisterComponent,
     BarbersComponent,
-    ScheduleTableComponent
+    ScheduleTableComponent,
+    PracticaExamenComponent
     // ContactComponent,
   ],
   imports: [

@@ -30,6 +30,7 @@ export class RegisterComponent implements OnInit {
 
   register(): void {
     if (this.registerForm.valid) {
+      console.log(this.registerForm.value);
       this.registerService.register(this.registerForm.value) // Usa el servicio
         .subscribe(
           response => {
