@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container-fluid {
+    height: 100vh; /* Ocupa toda la altura de la vista */
+    padding: 0; /* Elimina el padding para usar todo el espacio */
+    background-color: #000; /* Fondo negro para el contenedor */
+  }
+  
+  .table-responsive {
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    overflow: auto; /* Habilita el desplazamiento si es necesario */
+  }
+  
+  .table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    color: #fff; /* Texto blanco para el contenido de la tabla */
+  }
+  
+  .table thead th {
+    background-color: #333; /* Fondo gris oscuro para el encabezado */
+    color: #fff; /* Texto blanco en el encabezado */
+  }
+  
+  .table tbody td {
+    background-color: #000; /* Fondo negro para las celdas */
+  }
+  
+  .table tbody td.hour-cell {
+    color: #fff; /* Color blanco para el texto de las horas */
+  }
+  
+  .table-bordered th, .table-bordered td {
+    border: 1px solid #555; /* Borde gris oscuro */
+  }
+  
+  .available {
+    color: #28a745; /* Verde para disponible */
+    cursor: pointer;
+  }
+  
+  .unavailable {
+    color: #dc3545; /* Rojo para no disponible */
+    cursor: pointer;
+  }
+  
+  .available:hover, .unavailable:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .table {
+      font-size: 0.875rem;
+    }
+  }
+  

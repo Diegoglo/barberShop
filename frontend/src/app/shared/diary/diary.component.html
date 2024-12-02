@@ -1,0 +1,24 @@
+<div class="appointment-container" id="contacto">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Agendar Cita</h2>
+      <form>
+        <!-- FECHA -->
+        <div class="form-group">
+          <label for="date" class="form-label">Fecha</label>
+          <input type="date" class="form-control" id="date" [value]="selectedDate || today" [min]="today" required>
+        </div>
+        <!-- HORA -->
+        <div class="form-group">
+          <label for="time" class="form-label">Hora</label>
+          <input type="time" class="form-control" id="time" [value]="selectedTime || currentTime" [min]="currentTime" required>
+        </div>
+        <button disabled type="submit" class="btn" [routerLink]="['/home']" (click)="sendDateTimeToBackend()">Agendar</button>
+        <div class="view-hours">
+          <button type="button" class="btn view-hours-btn" (click)="checkAuthentication()">Ver horarios disponibles</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- [routerLink]="['/schedule-table']" -->

@@ -1,0 +1,15 @@
+<div class="container-fluid profile-container">
+    <div class="row profile-row">
+        <div class="col-lg-4 col-md-6 col-sm-12 profile-col" *ngFor="let profile of profiles">
+            <div class="card profile-card">
+                <img [src]="profile.photo" class="card-img-top" alt="Profile Photo">
+                <div class="card-body">
+                    <h5 class="card-title">{{ profile.name }}</h5>
+                    <p class="card-text">{{ profile.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  

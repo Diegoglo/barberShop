@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* body {
+  font-family: 'Cinzel', serif;
+} */
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+    background-color: #000; /* Fondo negro */
+    border-bottom: 1px solid #fff; /* borde blanco */
+}
+  
+.navbar-brand {
+    color: #fff; /* Letras blancas */
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Cinzel', serif;
+}
+
+.navbar-toggler {
+    border-color: #fff; /* Borde blanco */
+}
+
+.navbar-toggler .fas {
+    color: #fff; /* Icono blanco */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff; /* Letras blancas */
+    transition: color 0.3s;
+    font-family: 'Cinzel', serif;
+}
+
+.navbar-brand:hover{
+    color: #b7950b; /* Color dorado al pasar el mouse */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #b7950b; /* Color dorado al pasar el mouse */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #b7950b; /* Color dorado para el link activo */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #000; /* Fondo negro */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 20px;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+.sidebar .close-btn {
+    background: none;
+    border: none;
+    color: #fff; /* Botón de cerrar blanco */
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.sidebar .sidebar-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .sidebar-links li {
+    margin: 20px 0;
+}
+
+.sidebar .sidebar-links li a {
+    color: #fff; /* Letras blancas */
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    transition: color 0.3s;
+    }
+
+.sidebar .sidebar-links li a:hover {
+    color: #b7950b; /* Color dorado al pasar el mouse */
+}
+
+.sidebar .sidebar-links li a.active {
+    color: #b7950b; /* Color dorado para el link activo */
+}
+  

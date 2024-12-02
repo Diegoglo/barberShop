@@ -1,0 +1,39 @@
+
+  
+.hero-section {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que la sección ocupe al menos toda la altura de la pantalla */
+    padding: 0 1rem; /* Ajusta el padding para mover el contenido hacia arriba */
+    margin-top: -15vh; /* Mueve la sección hacia arriba */
+    font-family: 'Cinzel', serif;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem; /* Tamaño de fuente grande para h1 */
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem; /* Tamaño de fuente para párrafos */
+    margin-bottom: 1rem;
+}
+
+.hero-section .btn {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 1.75rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .hero-section p {
+        font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}

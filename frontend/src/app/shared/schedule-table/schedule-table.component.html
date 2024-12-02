@@ -1,0 +1,28 @@
+<div class="container-fluid h-100">
+  <div class="table-responsive h-100">
+    <table class="table table-bordered table-hover h-100">
+      <thead>
+        <tr>
+          <th>Hora/Día</th>
+          <th *ngFor="let day of days">{{ day }} ({{ dates[day] }})</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hour of hours">
+          <td class="hour-cell">{{ hour }}</td>
+          <td *ngFor="let day of days">
+            <span [ngClass]="{'available': schedule[day] && schedule[day][hour], 'unavailable': !schedule[day] || !schedule[day][hour]}"
+                  (click)="selectTime(day, hour)">
+              {{ schedule[day] && schedule[day][hour] ? 'Disponible' : 'No disponible' }}
+            </span>
+          </td>          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="selectedDay && selectedHour">
+    <p>Hora seleccionada: {{ selectedHour }} en {{ selectedDay }}</p>
+    <button >Agendar</button>
+  </div>
+</div>
+
